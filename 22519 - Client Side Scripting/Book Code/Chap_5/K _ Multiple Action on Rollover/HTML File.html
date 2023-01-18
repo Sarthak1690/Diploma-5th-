@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Multiple Action on Rollover : </title>
+    <script>
+        function Display1()
+         {
+            document.fruit.src = 'Apple.jpg';
+            document.getElementById('para').innerHTML = "Trees of Apple are larger than trees of Banana";
+         }
+
+        function Display2()
+         {
+            document.fruit.src = 'Banana.jpg';
+            document.getElementById('para').innerHTML = "Trees of Banana are smaller than trees of Apple";
+         }
+     </script>
+</head>
+<body>
+  <h2> Image Rollover : </h2>
+      <a onmouseover = "Display1()">
+         <h3> Apple </h3>
+      </a>
+
+      <a onmouseover = "Display2()">
+        <h3> Banana </h3>
+      </a>
+
+     <a>
+        <img src = 'Apple.jpg'  width = "30%" name="fruit">
+     </a>
+
+     <p id = 'para'> Trees of Apple are larger than trees of Banana </p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArrayDemo = Pop() </title>
+</head>
+    <script>
+        var a ;   
+        var r ;
+        var a = new Array();
+        a[0] = '5';
+        a[1] = '4';
+        a[2] = '3';
+        a[3] = '2';
+        a[4] = '1';
+
+        for(i = 0 ; i<a.length ; i++)
+            {
+                document.write("Element = " + a[i] + "<br>");
+            }
+
+        // By using pop() Method ------>
+        a.pop();
+        document.write("<br><br>"+"Removed Element="+r+"<br>");
+
+        for(i = 0 ; i<a.length ; i++)
+            {
+                document.write("Element = " + a[i] + "<br>");
+            }
+    </script>
+<body>
+</body>
+</html>

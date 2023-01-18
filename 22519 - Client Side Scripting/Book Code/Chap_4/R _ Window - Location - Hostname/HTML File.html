@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Host Example </title>
+    <script language="javasript" type="text/javascript">
+        function displayFunction()
+         {
+           document.getElementById("para").innerHTML="The host of the webpage: "+window.location.hostname;
+         }
+</script>
+</head>
+<body>
+      <p> Click to get the Host of webpage</p>
+      <input type="button" value="Get the Host" onclick="displayFunction()"/>
+      <p id="para"> </p>
+</body>
+</html>

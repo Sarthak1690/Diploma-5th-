@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Change Date of Cookie </title> 
+      <script language="javasript" type="text/javascript">
+        function setCookie() 
+          { 
+             var i=username.value;
+             document.cookie="username="+i;
+             alert("Cookie is Created");
+          }  
+       function changeDate() 
+          { 
+             var i=username.value;
+             var now=new Date();
+             now.setMonth(now.getMonth()+1);
+             document.cookie="username="+i+";expires="+now.toUTCString()+";path=/"; 
+            alert("Expiry Date of Cookie changed");
+          } 
+      function getCookie() 
+          { 
+             if(document.cookie.length!=0) 
+               { 
+                  alert(document.cookie); 
+               } 
+             else 
+               {
+                  alert("Cookie not available"); 
+               } 
+          } 
+      </script>
+</head>
+<body> 
+      Enter Username:<input type="text" id="username"> <br><br>
+      <input type="button" value="setCookie" onclick="setCookie()"> 
+      <input type="button" value="changeDate" onclick="changeDate()"> 
+      <input type="button" value="getCookie" onclick="getCookie()">
+</body>
+</html>

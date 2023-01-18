@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Change attribute value dynamically Demo : </title>
+    <script>
+          function display()
+           {
+              with(document.forms.frm1)
+                {
+
+                  if(c1.checked==true)
+                   {
+                     alert("C");
+                   }
+
+                  if(o1.checked==true)
+                   {
+                     alert("OOP");
+                   }
+
+                  if(j1.checked==true)
+                   {
+                    alert("Java");
+                   }
+
+                  if(p1.checked==true)
+                   {
+                    alert("PHP");
+                   }
+                }
+           }
+      </script>
+</head>
+<body>
+    <form name="frm1">
+        <input type="checkbox" name="c1" value="c">C <br>
+        <input type="checkbox" name="o1" value="oop">OOP <br>
+        <input type="checkbox" name="j1" value="java">JAVA <br>
+        <input type="checkbox" name="p1" value="php">PHP <br>
+
+        <input type="reset" name="r1" value="show" onclick="display()"> <br>
+    </form>
+</body>
+</html>

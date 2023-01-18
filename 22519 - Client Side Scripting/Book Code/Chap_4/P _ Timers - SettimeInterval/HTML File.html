@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Timer Example </title>
+    <script language="javasript" type="text/javascript">
+         function myFunction()
+           {
+              setInterval(displayFunction, 3000);
+           }
+         function displayFunction()
+          {
+               document.getElementById("para").innerHTML+="<p> Welcome to Javascript</>";
+          }
+    </script>
+</head>
+<body>
+      <p> Click to set the Time Interval</p>
+      <input type="button" value="Set Time Interval" onclick="myFunction()"/>
+      <p id="para"> </p>
+</body>
+</html>

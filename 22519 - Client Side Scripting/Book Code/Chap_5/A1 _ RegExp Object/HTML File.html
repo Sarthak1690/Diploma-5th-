@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RegExp -  Object Demo</title>
+    <script>
+         function testmatch()
+          {
+              var str = t1.value ;
+              var r = RegExp("student" , "g")
+              var p = str.match(r);
+                 if (p!=null)
+                  {
+                     alert("The String Contain student");
+                  }
+                else
+                  {
+                     alert("The String is does not contain student");
+                  }
+          }
+     </script>
+</head>
+<body>
+<form action="">
+    <center>
+        <h3><p> Check the availability of String </p></h3>
+        Enter Your String :
+        <input type = "text" id = "t1">
+        <input type = "button" value = "Check" name = "b1" onclick = "testmatch()">
+    </center>
+</form>
+</body>
+</html>

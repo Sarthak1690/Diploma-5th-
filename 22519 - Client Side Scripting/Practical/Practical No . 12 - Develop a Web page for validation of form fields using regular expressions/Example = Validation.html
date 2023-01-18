@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Validation Example </title> 
+      <script language="javasript" type="text/javascript">
+         function check()
+           {
+             var i = document.getElementById("usr").value;
+             var j = document.getElementById("pass").value;
+             var res1 = i.match(/student/g);
+             var res2 = j.match(/ifty/g);
+         
+                if(res1!=null &&res2!=null)
+                    alert("Logged in successfully");
+                else
+                    alert("Invalid UserName or Password"); 
+                 }
+      </script>
+</head>
+<body>
+       Enter UserName: <input type="text" id="usr"/><br><br>
+       Enter Password: <input type="text" id="pass"/><br><br>
+       <input type="button" value="Submit" onclick="check()"/>
+</body>
+</html>

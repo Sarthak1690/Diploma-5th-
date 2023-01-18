@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pulldown Menu Demo : </title>
+    <script>
+          function Myfunction()
+             {
+                var Myselect = document.getElementById("student");
+                var x = document.getElementById("select").value;
+                  if( x == "Select Subject")
+                    {
+                       alert("Please select Subject");
+                    }
+                  else
+                    {
+                       document.getElementById("Demo").innerHTML = "You Selected : " + x ;
+                    }
+             }
+      </script>
+</head>
+<body>
+  <select id = "select">
+    <option value = "Select Subject"> Select Subject</option>
+    <option value = "C">C</option>
+    <option value = "C++"> C++</option>
+    <option value = "Java">Java</option>
+    <option value = "Javascript">Javascript</option>
+    <option value = "Advanced Java">Advanced Java</option>
+  </select>
+     <input type = "button" value = "Submit" name = "B1" onclick = "Myfunction()">
+      <br><br>
+     <p id = "Demo"></p>
+</body>
+</html>

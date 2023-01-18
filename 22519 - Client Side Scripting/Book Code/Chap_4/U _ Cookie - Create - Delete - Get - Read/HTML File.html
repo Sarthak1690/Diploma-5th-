@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Cookie Demo :</title>
+</head>
+<script>
+       function setCookie()
+          {
+              var cookie_value = username.value;
+              document.cookie = "Username = " + cookie_value ;
+              alert("Cookie is created");
+          }
+       function deleteCookie()
+          {
+              var cookie_value = username.value ;
+              document.cookie = "username = " + cookie_value + " ;expires = Thu, 01 Jan 2024 00:00:01 GMT";
+              alert("Cookie is Deleted ");
+          }
+       function getCookie()
+          {
+             if(document.cookie.length!=0)
+                {
+                  alert(document.cookie);
+                }
+             else
+                {
+                   alert("Cookie not available");
+                }
+          }
+   </script>
+<body>
+         Enter Username : <input type = 'text' id = 'username'>
+         <input type = "button" value = "set cookie" onclick = "setCookie()">
+         <input type = "button" value = "deleteCookie" onclick = "deleteCookie()">
+         <input type = "button" value = "getCookie" onclick = "getCookie()">
+</body>
+</html>

@@ -1,0 +1,7 @@
+1) Explain and Enlist Diff. Components of Operating System ?
+2) Explain and Enlist Operation of Operating System ?
+3) Explain following terms :
+     - Program Management
+     - Resource Management 
+     - Security and Protection
+4) Explain and Enlist Diff Views of Operating System ?

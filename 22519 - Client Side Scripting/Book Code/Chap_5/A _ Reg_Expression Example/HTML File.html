@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var p = /student/i ;
+
+          function testmatch()
+           {
+              var str = t1.value ;
+                if (p.test(str))
+                  {
+                     alert("The String " + str + " contain given pattern");
+                  }
+                else
+                  {
+                     alert("The String " + str + " does not contain given pattern");
+                  }
+           }
+      </script>
+</head>
+<body>
+<form action = "">
+    <h3><p> Checking the availability of string.</p></h3>
+    <input type = "text" id = "t1">
+    <input type = "button" value = "match" onclick = "testmatch()">
+</form>
+</body>
+</html>

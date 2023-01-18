@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> change attribute Value dynamically</title>
+    <script>
+        function change(Element)
+          {
+             Element.style.backgroundColour="blue";
+          }
+    </script>
+</head>
+<body>
+       <form action="" method="post" name="entry">
+         Country:
+           <input type="text" value="India" name="cname1" onchange="change(this)"/><br>
+         City:
+           <input type="text" value="Pune" name="cname2" onchange="change(this)"/><br>
+           <input type="button" name="b1" value="Click">
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Push Method Demo : </title>
+      <script language = "JavaScript" type = "text/Javascript">
+           var a = new Array();
+               a[0] = "C";
+               a[1] = "C++";
+               a[2] = "Java";
+
+           document.write("Length of an Array Before Adding Element : " + a.length + "<br>");
+
+           // Push() : add more than one element at the end of array.
+           a.push("Javascript");
+           a.push("Php" , "CSS");
+
+           document.write("Length of an Array After Adding Element : " + a.length + "<br>");
+           for(var j = 0; j< a.length; j++)
+              {
+                 document.write("<br> The element = " + a[j]);
+               }
+      </script>
+</head>
+<body>
+
+</body>
+</html>

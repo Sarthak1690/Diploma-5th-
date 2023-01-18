@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Cookie = Setting the Expiration Date of Cookie : Demo </title>
+</head>
+<script>
+      function changedate()
+        {
+            var now = new Date();
+                now.setMonth( now.getMonth() + 1);
+                var cookie_value = username.value;
+                document.cookie = "Username = " + cookie_value + ";expires = " + now.toUTCString();
+                alert("Expiry Date of cookie changed : " + "username = " + cookie_value);
+        }
+   </script>
+<body>
+   Enter cookie name :
+       <input type = "text" id = "username">
+       <input type = "button" value = "Extend Expiary Date" onclick = "changedate()">
+</body>
+</html>

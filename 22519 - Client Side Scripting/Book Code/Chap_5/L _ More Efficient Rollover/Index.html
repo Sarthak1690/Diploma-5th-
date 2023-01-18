@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> More Efficient Rollover Demo : </title>
+</head>
+<body>
+<p> More Efficient Mouseover done by using addEventListener : </p>
+<h3><p id = "para"> Change style by MouseOver </p></h3>
+<script>
+       document.getElementById('para').addEventListener("mouseover" , mouseOver);
+       document.getElementById('para').addEventListener("mouseout" , mouseOut);
+
+         function mouseOver()
+           {
+              document.getElementById('para').style.color = "red";
+           }
+
+         function mouseOut()
+           {
+              document.getElementById('para').style.color = "black";
+           }
+   </script>
+</body>
+</html>

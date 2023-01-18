@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Change Images in Banner Demo : </title>
+     <script>
+        var Ban_Array = new Array('1.jpg' , '2.jpg' , '3.jpg');
+        var Link_Array = new Array('https://www.youtube.com/' , 'https://www.google.com/' , 'https://web.telegram.org');
+        var banner = 0 ;
+           function Display_Banner()
+            {
+               if(document.images)
+                 {
+                   banner++ ;
+                    if(banner == Ban_Array.length)
+                      {
+                        banner=0 ;
+                      }
+                   document.ChangeBanner.src = Ban_Array[banner]
+                   setTimeout("Display_Banner()" , 3000);
+                 }
+            }
+
+           function Display_Page()
+             {
+                document.location.href = Link_Array[banner]
+             }
+     </script>
+</head>
+   <body onload = "Display_Banner()">
+   <center>
+      <a href = "Javascript:Display_Page()">
+          <img src = "1.jpg" alt = "custom_html_banner1" width = "50%" name = "ChangeBanner">
+      </a>
+   </center>
+   </body>
+</html>

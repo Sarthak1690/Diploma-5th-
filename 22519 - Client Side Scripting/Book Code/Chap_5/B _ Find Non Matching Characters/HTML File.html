@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         var p = /[^abc]/;
+           function testMatch()
+             {
+                str = t1.value ;
+                  if(p.test(str))
+                   {
+                       alert("The String " + str + " contain character other than a,b,c.");
+                   }
+                 else
+                   {
+                       alert("The String " + str + " does not contain character other than a,b,c.");
+                   }
+             }
+
+     </script>
+</head>
+<body>
+<form action = "" name = "entry">
+    <h3><p>Check the availability of String.</p></h3>
+    Enter the string :
+    <input type = "text" id = "t1">
+    <input type = "button" value = "Match" onclick = "testMatch()">
+</form>
+</body>
+</html>

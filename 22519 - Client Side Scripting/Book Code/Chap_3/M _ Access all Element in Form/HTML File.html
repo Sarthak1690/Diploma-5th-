@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Access All Element in From </title>
+       <script>
+           function display()
+             {
+                with(document.forms.entry)
+                 {
+                    alert("Value="+elements[0].value+elements[1].value+elements[2].value);
+                 }
+             }
+       </script>
+</head>
+<body>
+  <form action="" method="post" name="entry">
+    Country:<input type="text" name="cname1"><br>
+    State:<input type="text" name="cname2"><br>
+    City:<input type="text" name="cname3"><br>
+    <input type="button" name="b1" value="Print" onclick="display()">
+  </form>
+
+</body>
+</html>

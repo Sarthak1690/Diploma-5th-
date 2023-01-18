@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Child Window </title>
+    <script language="javasript" type="text/javascript">
+         function openWindow()
+            {
+                var new_win=window.open("https://www.youtube.com/","","width=300,height=300" );
+            }
+        function closeWindow()
+            {
+                new_win.close();
+            }
+      </script>
+</head>
+<body>
+     <p> Click to Open a New Window</p>
+          <input type="button" value="Open New Window" onclick="openWindow()"/>
+     <p> Click to Close a New Window</p>
+          <input type="button" value="Close New Window" onclick="closeWindow()"/>
+</body>
+</html>

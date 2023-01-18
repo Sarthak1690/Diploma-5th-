@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key Event Demo : </title>
+      <script>
+         function down()
+           {
+              document.entry.b1.value = "Key down";
+           }
+         function up()
+           {
+              document.entry.b1.value = "Key up";
+           }
+         function press()
+           {
+              document.entry.b2.value = "Key Pressed";
+           }
+      </script>
+</head>
+<body>
+   <form action = "" method = "post" name = "entry">
+       <input type = "button" value = "Click" name = "b1" onkeydown = "down()" onkeyup = "up()"><br>
+       Enter key :
+       <input type = "text"  name = "b2" onkeypress = "press()">
+   </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Getter Property Demo : </title>
+    <script language = "JavaScript" type = "text/Javascript">
+      // Display the data from the object using a getter. -----> get <-----
+        var car = {
+                    Color : "Red" ,
+                    Brand : "FORD" ,
+                       get company()
+                          {
+                            return this.Brand ;
+                          }
+                  };
+             document.write("Company = " + car.company);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

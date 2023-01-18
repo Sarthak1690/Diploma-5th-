@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Setter Property Demo : </title>
+      <script language = "JavaScript" type = "text/Javascript">
+
+          var car = {
+                         color : "RED" ,
+                         Brand : "FORD" ,
+                            set company(value)
+                              {
+                                 this.Brand = value ;
+                              }
+                    };
+          document.write("Company = " + car.Brand + "<br>");
+          car.company = "BMW";
+
+          // Display the data from the object by using getter :
+          document.write("Company = " + car.Brand);
+      </script>
+</head>
+<body>
+
+</body>
+</html>

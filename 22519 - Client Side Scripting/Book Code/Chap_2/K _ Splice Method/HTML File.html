@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Splice Method Demo : </title>
+    <script language = "JavaScript" type = "text/javascript">
+        var a = new Array()
+            a[0] = "C" ;
+            a[1] = "C++" ;
+
+            document.write(" Original Length  : " + a.length + "<br>");
+            a.splice(2 , 0  , "C#" , "Java" , "Javascript");
+
+            document.write("New Length : " + a.length + "<br>");
+            for( var i = 0 ; i<a.length ; i++)
+              {
+                 document.write(a[i] + "<br>");
+              }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

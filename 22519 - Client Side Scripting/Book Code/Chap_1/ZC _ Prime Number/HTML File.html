@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Prime Number Demo : </title>
+    <script language = "JavaScript" type = "text/Javascript">
+        var k = true ;
+        for(let i=2; i <= 30; i++)
+           {
+              for(let j=2; j < i - 1; j++)
+                {
+                   if(i % j == 0)
+                     {
+                        k = false;
+                        break;
+                     }
+                }
+                    if(k)
+                      {
+                        document.write(i + "<br>");
+                      }
+                k = true;
+           }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

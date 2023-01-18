@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Match Word</title>
+    <script>
+          function testMatch()
+             {
+                 var str = t1.value ;
+                 var p = str.match(/student/g);
+                   if (p!=null)
+                    {
+                      alert("The String " + str + " contains student.");
+                    }
+                  else
+                    {
+                      alert("The String " + str + " does not contain student.");
+                    }
+             }
+      </script>
+</head>
+<body>
+<form action="">
+    <center>
+        <h3><p>Checking the availability of word in given string : </p></h3>
+        Enter Your String :
+        <input type = "text" id = "t1">
+        <input type = "button" value = "Match" onclick = "testMatch()">
+    </center>
+</form>
+</body>
+</html>

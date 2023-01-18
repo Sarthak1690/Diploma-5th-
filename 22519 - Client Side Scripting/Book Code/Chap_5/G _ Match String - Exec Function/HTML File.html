@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Match String Exec Function : </title>
+    <script>
+         function Testmatch()
+          {
+              var str = t1.value ;
+              var p = /student/g ;
+              var r = p.exec(str) ;
+                if(r!=null)
+                 {
+                       alert("The string " + str + " contains student");
+                 }
+                else
+                 {
+                       alert("The string " + str + " not contains student")
+                 }
+          }
+      </script>
+</head>
+<body>
+<form action = "">
+    <center>
+        <h3><p>Checking the availability of word in given string : </p></h3>
+        Enter your string :
+        <input type = "text" id = "t1">
+        <input type = "button" value = "Check" name = "b1" onclick = "Testmatch()">
+    </center>
+</form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> getElementById Demo : </title>
+       <script>
+           function display()
+            {
+               var i= document.getElementById("cname");
+               alert("You Entered="+i.value);
+            }
+
+       </script>
+</head>
+<body>
+    <form action = "" method = "post" name = "entry">
+        Country Name : <input type = "text" id= "cname" maxlength = "20">
+        <input type = "button" value = "print" name = "B1" onclick = "display()">
+    </form>
+</body>
+</html>

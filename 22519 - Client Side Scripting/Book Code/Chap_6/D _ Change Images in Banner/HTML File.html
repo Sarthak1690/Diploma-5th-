@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Change Images in Banner Demo : </title>
+      <script>
+          var ban_array = new Array('1.jpg' , '2.jpg' , '3.jpg' , '4.jpg' , '5.jpg');
+          var banner = 0 ;
+
+             function Display_Banner()
+               {
+                   if(document.images)
+                    {
+                       banner++ ;
+                         if(banner == ban_array.length)
+                           {
+                              banner = 0 ;
+                           }
+                       document.ChangeBanner.src = ban_array[banner];
+                       setTimeout("Display_Banner()" , 5000);
+                    }
+               }
+      </script>
+</head>
+   <body onload = "Display_Banner()">
+    <center>
+      <img src = "1.jpg" width = "50%"  height = "300" name = "ChangeBanner">
+    </center>
+   </body>
+</html>

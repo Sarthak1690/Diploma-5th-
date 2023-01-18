@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Delete Cookie Demo : </title>
+    <script language = "Javascript" type = "text/Javascript">
+
+           function DeleteCookie()
+             {
+                var cookie_value = "Username.value";
+                document.cookie = "Username = " + cookie_value + ";expires = Thu, 01 Jan 2024 00:00:01 GMT";
+                alert("Cookie is Deleted ");
+             }
+      </script>
+</head>
+<body>
+        Username :
+          <input type = "text" name = "t1" maxlength = "20">
+          <input type = "submit" value = "DeleteCookie" onclick = "DeleteCookie()">
+</body>
+</html>

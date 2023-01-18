@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> unShift Method Demo : </title>
+    <script language = "JavaScript" type = "text/Javascript">
+        var a = new Array();
+            a[0] = "Java" ;
+            a[1] = "Javascript" ;
+            a[2] = "Php" ;
+
+        document.write("Length of an Array before adding element : " + a.length + "<br>");
+        a.unshift("C");
+        a.unshift("C++" , "C#");
+
+        document.write("Length of an Array After adding element : " + a.length + "<br>");
+        for( var i = 0 ; i<a.length ; i++)
+         {
+             document.write(a[i] + "<br>");
+         }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

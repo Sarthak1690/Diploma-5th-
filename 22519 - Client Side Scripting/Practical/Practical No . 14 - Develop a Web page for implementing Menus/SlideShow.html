@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Image SlideShow</title>
+         <script language="javasript" type="text/javascript">
+             var images = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+             var count = 0;
+              function previousImage() 
+                   {
+                        if(count!=0)
+                        count--;
+                        var id = document.getElementById("imageId");
+                        id.src = "images/" + images[count];
+                   }
+              function nextImage() 
+                   {
+                        if(count!=4)
+                        count++;
+                        var id = document.getElementById("imageId");
+                        id.src = "images/" + images[count];
+                   }
+         </script>
+  </head>
+     <body>
+       <center>
+           <img id="imageId" src="images/1.jpg" width="300" height="200"/> </br></br>
+           <input type="button" value="< Prev Image" onclick="previousImage()"/>
+           <input type="button" value="Next Image >" onclick="nextImage()"/>
+       </center>
+     </body>
+</html>

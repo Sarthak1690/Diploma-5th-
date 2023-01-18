@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Event Demo : Keyup() & Keydown() </title>
+</head>
+  <script>
+      function down()
+         {
+            document.entry.b1.value = "Keydown";
+         }
+      function up()
+         {
+            document.entry.b1.value = "Keyup";
+         }
+      function press()
+         {
+            document.entry.b2.value = "KeyPressed";
+         }
+  </script>
+<body>
+      <form action = "" method = "post" name = "entry" >
+        
+           <input type = "button" name = "b1" value = "Click" onkeydown = "down()" onkeyup = "up()"> <br><br>
+
+         Enter Key : 
+            <input type = "text" name = "cname" onkeypress = "press()"><br>
+            <input type = "button" name = "b1" value = "Key"> <br>
+      </form> 
+</body>
+</html>

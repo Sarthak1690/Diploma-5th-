@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pulldown Menu Example</title>
+      <script language="javasript" type="text/javascript">
+         function GetSelectedItem()
+            {
+               var i=document.getElementById("select");
+               var str = i.options[i.selectedIndex].value;
+               alert("The selected value is:"+str);
+            }
+      </script>
+</head>
+    <body>
+        <form> 
+          Select you favourite Subject: <br><br>
+            <select id="select">
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+              <option value="JavaScript">JavaScript</option>
+            </select>
+              <input type="button" value="Get Selected Item" onclick="GetSelectedItem()"/>
+         </form>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> read cookie demo :</title>
+</head>
+<script>
+         function readCookie()
+            {
+                var cookies = document.cookie ;   // Assigning the cookie string to the variable ;
+                document.write("All stored Cookies = " + cookies);
+
+                var cookiearray = cookies.split(';');  // Spilting the cookie pairs in array ;
+
+                // Getting name = value pairs from array ;
+                    for ( var i = 0; i < cookiearray.length; i++)
+                     {
+                        // Getting each name = value pair from array ;
+                        var cookie_pair = cookiearray[i];
+                        // Getting name and value in an array from name value pair
+                        var name_value_array = cookie_pair.split('=');
+                        // Getting name from array ;
+                        var name = name_value_array[0];
+                        // Getting name form array ;
+                        var value = name_value_array[1];
+                            document.write("<br> Name is : " + name + " and value is :" + value);
+                     }
+            }
+    </script>
+<body>
+        <p> Click the following button to get the Cookies </p>
+        <input type = "button" value = "Get Cookie" onclick = "readCookie()">
+</body>
+</html>

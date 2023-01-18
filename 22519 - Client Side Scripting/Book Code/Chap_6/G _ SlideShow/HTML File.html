@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SlideShow Demo : </title>
+    <script>
+        var Image_Array = new Array('1.jpg' , '2.jpg' , '3.jpg' , '4jpg' , '5.jpg');
+        var Image = 0 ;
+
+           function Display(a)
+             {
+                  Image = Image + a ;
+                     if( Image > Image_Array.length - 1)
+                      {
+                         Image = 0 ;
+                      }
+                     if( Image < 0)
+                      {
+                        Image = Image_Array.length - 1
+                      }
+                  document.Slideshow.src = Image_Array[Image];
+             }
+     </script>
+</head>
+<body>
+<center>
+    <img src = "1.jpg" alt = "custom_html_banner1" width = "400" height = "220" name = "Slideshow">
+    <br><br>
+    <input type = "button" value = "Previous" onclick = "Display(-1)">
+    <input type = "button" value = "Next" onclick = "Display(1)">
+</center>
+</body>
+</html>

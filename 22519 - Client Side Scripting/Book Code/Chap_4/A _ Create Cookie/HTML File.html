@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Cookie Demo : </title>
+    <script language = "Javascript" type = "text/Javascript">
+
+           function CreateCookie()
+              {
+                    var cookie_value = "username.value";
+                    document.cookie = "Username = " + cookie_value ;
+                    alert("Cookie is created");
+              }
+      </script>
+</head>
+<body>
+     Username  : <input type = "text" name = "T1" maxlength = "15">
+                  <input type = "submit" value = "CreateCookie" onclick = "CreateCookie()">
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the range of character</title>
+    <script>
+        var p = /[a-z]/;
+           function Testmatch()
+             {
+                 var str = t1.value ;
+                 if (p.test(str))
+                  {
+                     alert("The String " + str + " contains the characters in range a-z.");
+                  }
+                 else
+                  {
+                     alert("The String " + str + " doesnot contains the characters in range a-z");
+                  }
+             }
+     </script>
+</head>
+<body>
+<form action = "">
+    <center>
+        <h3><p> Checking the availability of character in given range :</p></h3>
+        Enter your String :
+        <input type = "text" id = "t1" >
+        <input type = "button" value = "Match" onclick = "Testmatch()">
+    </center>
+</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Accessing Element of other Child Window : </title>
+  <script>
+       function display()
+        {
+           parent.right.document.getElementById("para").innerHTML = "Element 2 can accessed by from Frame 1";
+        }
+    </script>
+</head>
+<body>
+   <form>
+     <h4> Frame 1 </h4>
+     <input type = "button" value = "Click" name = "B1" onclick = "display()">
+   </form>
+
+</body>
+</html>
